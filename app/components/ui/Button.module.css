@@ -1,0 +1,31 @@
+.button {
+    @apply text-center inline-block relative no-underline text-bg uppercase bg-primary text-[1.8rem] font-bold py-5 w-72 rounded overflow-hidden mt-8 transition-all duration-200;
+}
+
+.button:active {
+    transform: scale(0.97);
+    box-shadow: 0 0.5rem 1rem rgba(234, 195, 96, 0.2);
+}
+
+.button::before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 800;
+    @apply flex items-center justify-center absolute top-0 left-0 h-full w-7 bg-[rgba(36,36,36,0.3)] rounded-r-full;
+    transform: scale(0, 1);
+    transform-origin: left center;
+    transition: all 0.2s linear;
+}
+
+.button:hover {
+    text-indent: 1.85rem;
+}
+
+.button:hover::before {
+    transform: scale(1.5, 1.5);
+    text-indent: 0;
+}
+
+.button:visited {
+    @apply text-bg;
+}
