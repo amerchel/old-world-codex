@@ -3,7 +3,11 @@ import "@fontsource/dm-sans/400.css";
 import "@fontsource/dm-sans/600.css";
 import "@fontsource/dm-sans/700.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
 import type { Metadata } from "next";
+import { Navbar } from "@/app/components/sections/Navbar";
+import { NavbarMobile } from "@/app/components/sections/mobile/NavbarMobile";
+import {Footer} from "@/app/components/sections/Footer";
 
 export const metadata: Metadata = {
     title: "OldWorld Codex",
@@ -17,7 +21,21 @@ export default function RootLayout({
 }) {
     return (
         <html lang="pl">
-        <body className="bg-bg text-secondary font-sans">{children}</body>
+        <body className="bg-bg text-secondary font-sans">
+        <div className="hidden sm:block">
+            <Navbar />
+        </div>
+        <div className="block sm:hidden">
+            <NavbarMobile />
+        </div>
+
+        {children}
+
+        <div className="hidden sm:block">
+            <Footer />
+        </div>
+
+        </body>
         </html>
     );
 }

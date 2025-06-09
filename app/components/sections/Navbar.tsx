@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { MobileMenu } from "./MobileMenu";
+import { NavbarMobile } from "../sections/mobile/NavbarMobile";
 
 export const Navbar = () => {
     return (
@@ -21,14 +21,19 @@ export const Navbar = () => {
             </div>
 
             <ul className="hidden sm:flex flex-row gap-8 text-secondary">
-                <li><a href="#knowlage" className="text-2xl nav-hover-gradient">Instrukcja</a></li>
+                <li>
+                    <Link href="/knowledge" className="text-2xl nav-hover-gradient">
+                        Instrukcja
+                    </Link>
+                </li>
                 <li><a href="#bestiary" className="text-2xl nav-hover-gradient">Bestiariusz</a></li>
                 <li><a href="#contact" className="text-2xl nav-hover-gradient">Kontakt</a></li>
                 <li><a href="#register" className="text-2xl nav-hover-gradient">Rejestracja</a></li>
                 <li><a href="#login" className="text-2xl nav-hover-gradient">Logowanie</a></li>
             </ul>
 
-            <MobileMenu />
+
+            <NavbarMobile />
         </nav>
     );
 };

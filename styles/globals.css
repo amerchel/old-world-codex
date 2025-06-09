@@ -46,6 +46,17 @@ html {
     -webkit-text-fill-color: transparent;
   }
 
+  .nav-hover-gradient-mobile {
+    transition: all 0.2s ease;
+  }
+
+  .nav-hover-gradient-mobile:hover {
+    background: linear-gradient(90deg, rgba(38, 38, 38, 1) 40%, rgba(38, 38, 38, 0) 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
   .btn-primary {
     @apply bg-primary text-bg rounded-lg px-6 py-3 text-xl font-semibold text-center transition-all duration-300 border-2 border-transparent;
   }
@@ -53,4 +64,7 @@ html {
   .btn-primary:hover {
     @apply bg-transparent text-primary border-primary;
   }
+
+
+
 }
