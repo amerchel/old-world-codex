@@ -41,7 +41,11 @@ export const NavbarMobile = () => {
                 }`}
             >
                 <ul className="flex flex-col gap-4 text-center" onClick={() => setOpen(false)}>
-                    <li><a href="#knowledge" className="text-lg nav-hover-gradient-mobile">Instrukcja</a></li>
+                    <li>
+                        <Link href="/knowledge" className="text-lg nav-hover-gradient-mobile">
+                            Instrukcja
+                        </Link>
+                    </li>
                     <li><a href="#bestiary" className="text-lg nav-hover-gradient-mobile">Bestiariusz</a></li>
                     <li><a href="#contact" className="text-lg nav-hover-gradient-mobile">Kontakt</a></li>
                     <li><a href="#register" className="text-lg nav-hover-gradient-mobile">Rejestracja</a></li>

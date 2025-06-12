@@ -24,6 +24,11 @@ html {
   scroll-behavior: smooth;
 }
 
+.noscroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 @layer utilities {
   .bg-hover-expand {
     background-image: linear-gradient(90deg, rgba(234, 195, 96, 0.52) 0%, rgba(234, 195, 96, 0) 100%);
@@ -56,7 +61,6 @@ html {
     -webkit-text-fill-color: transparent;
   }
 
-
   .btn-primary {
     @apply bg-primary text-bg rounded-lg px-6 py-3 text-xl font-semibold text-center transition-all duration-300 border-2 border-transparent;
   }
@@ -65,6 +69,18 @@ html {
     @apply bg-transparent text-primary border-primary;
   }
 
+  input.custom-no-spinner::-webkit-outer-spin-button,
+  input.custom-no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
+  input.custom-no-spinner {
+    -moz-appearance: textfield;
+  }
 
+  .focus-none:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }

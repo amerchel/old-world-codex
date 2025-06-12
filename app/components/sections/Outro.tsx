@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const Outro = () => {
     return (
-        <section className="relative w-full h-screen overflow-hidden flex items-center justify-center bg-bg pb-48">
+        <section className="relative w-full h-screen overflow-hidden flex items-center justify-center bg-bg pb-18">
             <div
                 className="absolute w-full h-full bg-cover bg-center bg-no-repeat z-0 blur-[2px]"
                 style={{
