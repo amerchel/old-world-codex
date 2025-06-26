@@ -74,11 +74,11 @@ export const About = () => {
                             />
                             <div>
                                 <h3 className="text-[1.4rem] font-semibold text-primary">
-                                    Kalkulator walk
+                                    Asystent przygotowania rozgrywki
                                 </h3>
                                 <p className="text-[1.25rem]">
-                                    Wprowadź statystyki i karty akcji – kalkulator sam obliczy wynik walki i pokaże
-                                    jej przebieg. Nie musisz martwić się kolejnością kart, my zrobimy to za Ciebie.
+                                    Asystent przygotowania rozgrywki to szybki i intuicyjny sposób na start w świecie Wiedźmina.
+                                    Wybierz liczbę graczy oraz postacie – resztą zajmie się nasze narzędzie. Rozgrywka gotowa w kilka chwil, bez pomyłek i bez stresu!
                                 </p>
                             </div>
                         </li>

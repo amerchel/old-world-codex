@@ -20,7 +20,7 @@ export const Outro = () => {
                 </h2>
                 <p className="text-[1.8rem] text-secondary max-w-[50rem] mb-16">
                     Skorzystaj z interaktywnej instrukcji, poznaj potwory w bestiariuszu i przygotuj się
-                    do walki z pomocą naszego kalkulatora.
+                    do walki z pomocą naszego asystenta rozgrywki.
                 </p>
                 <Button href="#register"> Stwórz konto! </Button>
             </div>

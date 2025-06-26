@@ -3,9 +3,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { NavbarMobile } from "../sections/mobile/NavbarMobile";
+import { usePathname } from 'next/navigation'
+
 
 
 export const Navbar = () => {
+    const pathname = usePathname()
+
     return (
         <nav className="w-full bg-bg flex items-center justify-between px-8 py-6 z-20 sticky top-0 flex-wrap sm:flex-nowrap">
 
@@ -28,9 +32,21 @@ export const Navbar = () => {
                         Instrukcja
                     </Link>
                 </li>
+                <li>
+                    <Link
+                        href="/setup"
+                        className={`text-2xl transition-all duration-500 ${
+                            pathname === '/setup'
+                                ? 'bg-gradient-to-r from-primary to-bg bg-clip-text text-transparent'
+                                : 'text-secondary nav-hover-gradient'
+                        }`}
+                    >
+                        Szybki Start
+                    </Link>
+                </li>
+
                 <li><a href="#bestiary" className="text-2xl nav-hover-gradient">Bestiariusz</a></li>
                 <li><a href="#contact" className="text-2xl nav-hover-gradient">Kontakt</a></li>
-                <li><a href="#register" className="text-2xl nav-hover-gradient">Rejestracja</a></li>
                 <li><a href="#login" className="text-2xl nav-hover-gradient">Logowanie</a></li>
             </ul>
 

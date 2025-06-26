@@ -13,11 +13,17 @@
     "@fontsource/outfit": "^5.2.5",
     "@fontsource/roboto": "^5.2.5",
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "canvas": "^3.1.1",
+    "konva": "^8.4.3",
     "lucide-react": "^0.513.0",
-    "next": "14.1.0",
+    "next": "^14.2.30",
     "react": "18.2.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "18.2.0",
-    "react-pageflip": "^2.0.3"
+    "react-konva": "^18.2.3",
+    "react-pageflip": "^2.0.3",
+    "use-image": "^1.1.4"
   },
   "devDependencies": {
     "@types/node": "^20.5.0",

@@ -61,12 +61,14 @@ export const KnowledgeBook = () => {
 
     return (
         <>
-        <Link
-            href="/"
-            className="absolute top-8 left-8 z-50 text-sm py-1 px-4 border border-primary rounded-md text-primary hover:bg-primary hover:text-bg transition"
-        >
+        {zoomedPage === null && (
+            <Link
+                href="/"
+                className="absolute top-8 left-8 z-50 text-sm py-1 px-4 border border-primary rounded-md text-primary hover:bg-primary hover:text-bg transition"
+            >
             ← Powrót
         </Link>
+            )}
 
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-bg z-10 px-4">
             <div className="relative flex items-center justify-center w-full max-w-[95vw] max-h-[85vh]">

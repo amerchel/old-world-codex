@@ -11,7 +11,7 @@ export const NavbarMobile = () => {
         <div className="sm:hidden relative z-50 w-full">
             <div className="flex items-center justify-between px-4 py-4 bg-bg z-50">
 
-                <div className="flex items-center gap-3">
+                <Link href="/" className="flex items-center gap-3">
                     <Image
                         src="/assets/nav/logo.png"
                         alt="logo"
@@ -20,7 +20,7 @@ export const NavbarMobile = () => {
                         className="w-10 h-auto"
                     />
                     <span className="text-xl font-semibold text-primary">OldWorld Codex</span>
-                </div>
+                </Link>
 
                 {/* Hamburger */}
                 <button onClick={() => setOpen(!open)}>
@@ -46,10 +46,26 @@ export const NavbarMobile = () => {
                             Instrukcja
                         </Link>
                     </li>
-                    <li><a href="#bestiary" className="text-lg nav-hover-gradient-mobile">Bestiariusz</a></li>
-                    <li><a href="#contact" className="text-lg nav-hover-gradient-mobile">Kontakt</a></li>
-                    <li><a href="#register" className="text-lg nav-hover-gradient-mobile">Rejestracja</a></li>
-                    <li><a href="#login" className="text-lg nav-hover-gradient-mobile">Logowanie</a></li>
+                    <li>
+                        <Link href="/setup" className="text-lg nav-hover-gradient-mobile">
+                            Szybki Start
+                        </Link>
+                    </li>
+                    <li>
+                        <a href="#bestiary" className="text-lg nav-hover-gradient-mobile">
+                            Bestiariusz
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" className="text-lg nav-hover-gradient-mobile">
+                            Kontakt
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#login" className="text-lg nav-hover-gradient-mobile">
+                            Logowanie
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
