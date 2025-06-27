@@ -51,7 +51,7 @@
 
 ## ✍️ Autor
 
-Projekt stworzony przez [@amerchel](https://github.com/amerchel) jako projekt zaliczeniowy na studia, a także jako fanowskie narzędzie wspierające graczy **Wiedźmin: Stary Świat**.
+Projekt stworzony przez [@amerchel](https://github.com/amerchel), [@SzymekNawrocki](https://github.com/SzymekNawrocki), [@bostrowski-data](https://github.com/bostrowski-data) oraz [@pkcdv](https://github.com/pkcdv) jako projekt zaliczeniowy na studia, a także jako fanowskie narzędzie wspierające graczy **Wiedźmin: Stary Świat**.
 
 ## ⚠️ Zastrzeżenia
 
