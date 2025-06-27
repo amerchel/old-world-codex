@@ -46,7 +46,18 @@ export const Navbar = () => {
                 </li>
 
                 <li><a href="#bestiary" className="text-2xl nav-hover-gradient">Bestiariusz</a></li>
-                <li><a href="#contact" className="text-2xl nav-hover-gradient">Kontakt</a></li>
+                <li>
+                    <Link
+                        href="/inventory"
+                        className={`text-2xl transition-all duration-500 ${
+                            pathname === '/inventory'
+                                ? 'bg-gradient-to-r from-primary to-bg bg-clip-text text-transparent'
+                                : 'text-secondary nav-hover-gradient'
+                        }`}
+                    >
+                        Ekwipunek
+                    </Link>
+                </li>
                 <li><a href="#login" className="text-2xl nav-hover-gradient">Logowanie</a></li>
             </ul>
 

@@ -57,8 +57,8 @@ export const NavbarMobile = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" className="text-lg nav-hover-gradient-mobile">
-                            Kontakt
+                        <a href="/inventory" className="text-lg nav-hover-gradient-mobile">
+                            Ekwipunek
                         </a>
                     </li>
                     <li>
