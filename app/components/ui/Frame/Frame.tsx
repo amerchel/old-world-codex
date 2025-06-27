@@ -3,15 +3,20 @@ type FrameProps = {
   title?: string;
   transparent?: boolean;
   titleAlignment?: "left" | "center" | "right";
-  contentAlignment?: "left" | "center" | "right";
+  additionalClasses?: string;
 };
 
 export const Frame = (props: FrameProps) => {
   let titleClasses = "text-primary text-2xl font-semibold mb-2";
-  let frameClasses = "px-4 py-2 rounded-lg border-2 border-primary block";
+  let frameClasses =
+    "text-secondary px-4 py-2 rounded-lg border-2 border-primary block";
 
   if (!props.transparent) {
     frameClasses += " bg-bg";
+  }
+
+  if (props.additionalClasses) {
+    frameClasses += ` ${props.additionalClasses}`;
   }
 
   switch (props.titleAlignment) {
@@ -24,19 +29,6 @@ export const Frame = (props: FrameProps) => {
     case "left":
     default:
       titleClasses += " text-left";
-      break;
-  }
-
-  switch (props.contentAlignment) {
-    case "center":
-      frameClasses += " text-center";
-      break;
-    case "right":
-      frameClasses += " text-right";
-      break;
-    case "left":
-    default:
-      frameClasses += " text-left";
       break;
   }
 

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { NavLink } from "../../ui";
+import { Frame, NavLink } from "../../ui";
 import Link from "next/link";
 
 export const NavbarMobile = () => {
@@ -42,8 +42,8 @@ export const NavbarMobile = () => {
       </div>
 
       {/* Menu mobilne */}
-      <div
-        className={`absolute top-[72px] right-4 z-40 bg-bg text-secondary rounded-lg px-6 py-4 shadow-md transform transition-all duration-300 origin-top-right border-2 border-primary ${
+      <Frame
+        additionalClasses={`absolute top-[72px] right-4 z-40 rounded-lg shadow-md transform transition-all duration-300 origin-top-right ${
           open
             ? "opacity-100 scale-100"
             : "opacity-0 scale-95 pointer-events-none"
@@ -69,7 +69,7 @@ export const NavbarMobile = () => {
             <NavLink href="#login">Logowanie</NavLink>
           </li>
         </ul>
-      </div>
+      </Frame>
     </div>
   );
 };
