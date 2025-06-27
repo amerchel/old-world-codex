@@ -3,3 +3,4 @@ export { Frame } from "./Frame/Frame";
 export { Input } from "./Input/Input";
 export { RadioGroup } from "./RadioGroup/RadioGroup";
 export { TextButton } from "./TextButton/TextButton";
+export { NavLink } from "./NavLink/NavLink";

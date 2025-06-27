@@ -9,8 +9,8 @@
   --color-dark: #cda42a;
   --color-bg: #262626;
 
-  --font-dm-sans: 'DM Sans', sans-serif;
-  --font-awesome: 'FontAwesome', sans-serif;
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-awesome: "FontAwesome", sans-serif;
 }
 
 * {
@@ -31,7 +31,11 @@ html {
 
 @layer utilities {
   .bg-hover-expand {
-    background-image: linear-gradient(90deg, rgba(234, 195, 96, 0.52) 0%, rgba(234, 195, 96, 0) 100%);
+    background-image: linear-gradient(
+      90deg,
+      rgba(234, 195, 96, 0.52) 0%,
+      rgba(234, 195, 96, 0) 100%
+    );
     background-size: 0 100%;
     background-repeat: no-repeat;
     transition: background-size 0.4s ease;
@@ -46,7 +50,11 @@ html {
   }
 
   .nav-hover-gradient:hover {
-    background: linear-gradient(90deg, rgba(234, 195, 96, 0.9) 40%, rgba(234, 195, 96, 0) 110%);
+    background: linear-gradient(
+      90deg,
+      rgba(234, 195, 96, 0.9) 40%,
+      rgba(234, 195, 96, 0) 110%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -56,7 +64,11 @@ html {
   }
 
   .nav-hover-gradient-mobile:hover {
-    background: linear-gradient(90deg, rgba(38, 38, 38, 1) 40%, rgba(38, 38, 38, 0) 110%);
+    background: linear-gradient(
+      90deg,
+      rgba(38, 38, 38, 1) 40%,
+      rgba(38, 38, 38, 0) 110%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -82,5 +94,9 @@ html {
   .focus-none:focus {
     outline: none;
     box-shadow: none;
+  }
+
+  .gradient-hover::after {
+    transition: width 0.2s ease;
   }
 }
