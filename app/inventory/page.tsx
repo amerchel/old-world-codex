@@ -5,16 +5,16 @@ import { inventoryData } from '@/app/constants/inventoryData'
 import { useImageCarousel } from '@/app/hooks/useImageCarousel'
 
 export default function InventoryPage() {
-    const { activeImageIndex, fade, setActiveImageIndex } = useImageCarousel(inventoryData)
+    const { activeImageIndex, setActiveImageIndex } = useImageCarousel(inventoryData)
 
-    let globalIndex = 0 // Globalny indeks przedmiotów
+    let globalIndex = 0
 
     return (
         <main className="max-w-[1300px] mx-auto px-4 sm:px-12 py-16">
             {inventoryData.map((section, sectionIndex) => (
                 <section key={sectionIndex} className="mb-16">
                     <h2 className="text-2xl font-semibold text-primary mb-8 border-b border-primary pb-2">
-                        {section.category} // Nazwa kategorii
+                        {section.category}
                     </h2>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 sm:gap-x-20 gap-y-16">
