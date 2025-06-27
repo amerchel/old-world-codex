@@ -61,7 +61,7 @@ export const AboutMobile = () => {
                         </div>
                     </li>
 
-                    {/* Kalkulator */}
+                    {/* Szybki start */}
                     <li className="flex items-start gap-4 rounded-2xl list-none p-3 bg-hover-expand">
                         <Image
                             src="/assets/about/calcImg.png"
@@ -71,9 +71,10 @@ export const AboutMobile = () => {
                             className="w-12 h-auto"
                         />
                         <div>
-                            <h3 className="text-lg font-semibold text-primary">Kalkulator walk</h3>
+                            <h3 className="text-lg font-semibold text-primary">Asystent przygotowania rozgrywki</h3>
                             <p className="text-sm">
-                                Wprowadź dane, a kalkulator obliczy wynik i pokaże przebieg walki krok po kroku.
+                                Asystent przygotowania rozgrywki to szybki i intuicyjny sposób na start w świecie Wiedźmina.
+                                Wybierz liczbę graczy oraz postacie – resztą zajmie się nasze narzędzie. Rozgrywka gotowa w kilka chwil, bez pomyłek i bez stresu!
                             </p>
                         </div>
                     </li>
