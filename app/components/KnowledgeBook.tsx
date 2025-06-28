@@ -12,7 +12,7 @@ import { useNavigationControls } from '@/app/hooks/useNavigationControls'
 import { useTOCHide } from '@/app/hooks/useTOCHide'
 import { ZoomView } from '@/app/components/ui/ZoomView'
 import { useZoom } from '@/app/hooks/useZoom'
-import {tableofcontent} from "@/app/constants/tableofcontent";
+import {tableofcontent} from '@/app/constants/tableofcontent'
 
 // Łączna liczba stron w książce
 const totalPages = 36
