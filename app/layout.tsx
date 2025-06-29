@@ -16,7 +16,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const pathname = usePathname();
 
   return (
-    <ClerkProvider localization={plPL}>
+      <ClerkProvider
+          localization={plPL}
+          publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+          signInUrl={process.env.NEXT_PUBLIC_CLERK_SIGN_IN_URL}
+          signUpUrl={process.env.NEXT_PUBLIC_CLERK_SIGN_UP_URL}
+          afterSignInUrl="/"
+          afterSignUpUrl="/"
+      >
       <html lang="pl" className="h-full">
     <body className="bg-bg text-secondary font-sans h-full flex flex-col min-h-screen">
   {!pathname.startsWith("/knowledge") && (
