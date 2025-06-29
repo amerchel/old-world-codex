@@ -1,28 +1,38 @@
 # 🐺 OldWorld Codex
 
-**OldWorld Codex** to przeglądarkowa aplikacja wspierająca grę planszową **Wiedźmin: Stary Świat**. Projekt zawiera interaktywną instrukcję, ściągę jak rozpocząć rozgrywkę (szybki start), a także bestiariusz.
+**OldWorld Codex** to przeglądarkowa aplikacja wspierająca grę planszową **Wiedźmin: Stary Świat**. Projekt zawiera interaktywną instrukcję, ściągę jak rozpocząć rozgrywkę (szybki start), listę kart, które znajdują się w pudełku, a także bestiariusz.
+Narzędzie dostępne jest pod tym [linkiem](https://old-world-codex.vercel.app)
 
 ## 🔮 Funkcje
 
-- 📖 **Interaktywna instrukcja** z realistycznym flipbookiem
-- ⚔️ **Szybki start** – konfiguracja graczy, potworów oraz planszy w formie wygodnej ściągi
-- 🧟 **Bestiariusz** – zanurz się głębiej w Wiedźmiński świat, poznaj swoich przeciwników i sprzymierzeńców
-- 📱 **Responsywny interfejs** – działa świetnie na desktopach i urządzeniach mobilnych
+- 📖 **Interaktywna instrukcja** z realistycznym flipbookiem  
+- ⚔️ **Szybki start** – konfiguracja graczy, potworów oraz planszy w formie wygodnej ściągi  
+- 🧟 **Bestiariusz** – zanurz się głębiej w Wiedźmiński świat, poznaj swoich przeciwników i sprzymierzeńców  
+- 🗃️ **Ekwipunek** – pełna lista kart dostępnych w grze: akcje, przedmioty, trofea i inne elementy  
+- 📱 **Responsywny interfejs** – działa świetnie na desktopach i urządzeniach mobilnych  
+
 
 ## 🛠️ Stos technologiczny
 
-- **Next.js 14 (App Router)**
-- **TypeScript**
-- **Tailwind CSS**
-- **Framer Motion** – animacje
-- **Vercel** – hosting
+- **Next.js 15.3.4 (App Router)** – framework Reacta
+- **TypeScript** – statyczne typowanie
+- **Tailwind CSS** – narzędziowy framework CSS
+- **Framer Motion** – animacje w React
+- **Clerk** – uwierzytelnianie i zarządzanie użytkownikami
+- **Prisma ORM** – warstwa dostępu do bazy danych
+- **PostgreSQL** – baza danych
+- **Lucide React** – nowoczesne ikony w stylu Feather
+- **Font Awesome** – ikony i symbole
+- **Zod** – walidacja schematów danych
+- **React Hook Form** – obsługa formularzy
+- **Vercel** – hosting i CI dla Next.js
 
 ## 🚀 Uruchomienie projektu lokalnie
 
 1. Sklonuj repozytorium:
    ```bash
    git clone https://github.com/amerchel/old-world-codex
-   cd oldworld-codex
+   cd old-world-codex
    ```
 
 2. Zainstaluj zależności:
