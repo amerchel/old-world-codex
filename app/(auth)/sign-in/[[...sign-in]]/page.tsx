@@ -3,6 +3,7 @@
 import { SignIn } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import {clerkAppearance} from "@/app/components/ui/ClerkAppearance";
 
 export default function SignInPage() {
   const router = useRouter();
@@ -14,15 +15,8 @@ export default function SignInPage() {
   }, [router]);
 
   return (
-    <div
-      style={{
-        minHeight: "80vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <SignIn forceRedirectUrl="/" />
-    </div>
+      <div className="min-h-[80vh] flex items-center justify-center">
+          <SignIn forceRedirectUrl="/" appearance={clerkAppearance} />
+      </div>
   );
 }

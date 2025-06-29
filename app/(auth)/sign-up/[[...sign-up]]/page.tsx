@@ -1,4 +1,5 @@
 import { SignUp } from '@clerk/nextjs';
+import {clerkAppearance} from "@/app/components/ui/ClerkAppearance";
 
 export default function Page() {
   return (
@@ -10,7 +11,7 @@ export default function Page() {
         justifyContent: 'center',
       }}
     >
-      <SignUp />
+      <SignUp appearance={clerkAppearance} />
     </div>
   );
 }

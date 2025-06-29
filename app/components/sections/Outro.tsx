@@ -1,7 +1,6 @@
 'use client'
 
 import { Button } from "../ui";
-import Image from "next/image";
 
 export const Outro = () => {
     return (
@@ -22,7 +21,7 @@ export const Outro = () => {
                     Skorzystaj z interaktywnej instrukcji, poznaj potwory w bestiariuszu i przygotuj się
                     do walki z pomocą naszego asystenta rozgrywki.
                 </p>
-                <Button href="#register"> Stwórz konto! </Button>
+                <Button href="/sign-up"> Stwórz konto! </Button>
             </div>
         </section>
     );

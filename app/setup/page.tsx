@@ -44,7 +44,7 @@ export default function Setup() {
                         className={`px-4 py-2 rounded-lg border-2 transition-all duration-200 text-sm sm:text-base ${
                             players === n
                                 ? 'bg-primary text-bg border-primary'
-                                : 'border-secondary text-secondary hover:bg-primary hover:text-bg'
+                                : 'border-[#D9D9D9] text-secondary hover:bg-primary hover:text-bg'
                         }`}
                     >
                         {n} {n === 1 ? 'gracz' : 'graczy'}

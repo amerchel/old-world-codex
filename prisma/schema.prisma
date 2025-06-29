@@ -8,8 +8,16 @@ datasource db {
 }
 
 model Player {
-  id        Int      @id @default(autoincrement())
-  name      String
-  character String
-  joinedAt  DateTime @default(now())
+  id          Int       @id @default(autoincrement())
+  name        String
+  character   Character @relation(fields: [characterId], references: [id])
+  characterId Int
+  joinedAt    DateTime  @default(now())
+}
+
+model Character {
+  id       Int      @id @default(autoincrement())
+  name     String   @unique
+  school   String
+  players  Player[]
 }

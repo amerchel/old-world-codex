@@ -1,5 +1,5 @@
 'use client'
-import { SignedIn, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import { NavbarMobile } from "../sections/mobile/NavbarMobile";
 import { NavLink } from "../ui/NavLink";
@@ -15,7 +15,7 @@ export const Navbar = () => {
     alt="logo"
     width={100}
     height={100}
-    className="w-10 h-auto"
+    className="w-14 h-auto"
     priority
   />
   <span className="text-3xl font-semibold text-[#CAB05B]">
@@ -24,30 +24,42 @@ export const Navbar = () => {
 </Link>
 
 
-      <ul className="hidden sm:flex flex-row gap-8 text-[#CAB05B] items-center">
-        <li>
-          <NavLink href="/knowledge">Instrukcja</NavLink>
-        </li>
-        <li>
-          <NavLink href="/setup">Szybki Start</NavLink>
-        </li>
-        <li>
-          <NavLink href="/bestiariusz">Bestiariusz</NavLink>
-        </li>
-        <li>
-          <NavLink href="/inventory">Ekwipunek</NavLink>
-        </li>
-        <li>
-          <NavLink href="/sign-in">Logowanie</NavLink>
-        </li>
-        <li>
-          <NavLink href="/gracze">Gracze</NavLink>
-        </li>
+      <ul className="hidden sm:flex flex-row gap-8 text-[#d8ccb9] items-center">
+        {/* Dla niezalogowanych (SignedOut) */}
+        <SignedOut>
+          <li>
+            <NavLink href="/inventory">Ekwipunek</NavLink>
+          </li>
+          <li>
+            <NavLink href="/sign-in">Logowanie</NavLink>
+          </li>
+          <li>
+            <NavLink href="/sign-up">Rejestracja</NavLink>
+          </li>
+        </SignedOut>
+
+        {/* Dla zalogowanych (SignedIn): cała reszta */}
         <SignedIn>
+          <li>
+            <NavLink href="/knowledge">Instrukcja</NavLink>
+          </li>
+          <li>
+            <NavLink href="/setup">Szybki Start</NavLink>
+          </li>
+          <li>
+            <NavLink href="/bestiariusz">Bestiariusz</NavLink>
+          </li>
+          <li>
+            <NavLink href="/inventory">Ekwipunek</NavLink>
+          </li>
+          <li>
+            <NavLink href="/gracze">Gracze</NavLink>
+          </li>
           <li>
             <UserButton />
           </li>
         </SignedIn>
+
       </ul>
 
       <div className="sm:hidden">
