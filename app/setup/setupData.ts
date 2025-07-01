@@ -1,8 +1,8 @@
 export const instrukcje: Record<number, string> = {
     1: '1 potwór (po 1 z każdego poziomu), 1 karta trofeum atrybutu, brak kart trofeum szkoły. Gracz 1 zaczyna z 5 kartami i 3 złotem.',
-    2: '3 potwory (2× poziom I + 1× poziom II), 4 karty trofeów atrybutów, każdy gracz dostaje 1 trofeum szkoły. Gracze zaczynają z 3–5 kartami i 2–4 złotem.',
-    3: '3 potwory (3× poziom I), 4 karty trofeów atrybutów, każdy gracz dostaje 2 trofea szkoły. Gracze zaczynają z 3–5 kartami i 2–6 złotem.',
-    4: '4 potwory (3× poziom I + 1 na osobny stos), 8 kart trofeów atrybutów, każdy gracz dostaje 3 trofea szkoły i zwiększa 1 atrybut do poziomu 2. Start z 2–5 kartami i 4–7 złotem.',
+    2: '3 monsters (2× poziom I + 1× poziom II), 4 karty trofeów atrybutów, każdy gracz dostaje 1 trofeum szkoły. Gracze zaczynają z 3–5 kartami i 2–4 złotem.',
+    3: '3 monsters (3× poziom I), 4 karty trofeów atrybutów, każdy gracz dostaje 2 trofea szkoły. Gracze zaczynają z 3–5 kartami i 2–6 złotem.',
+    4: '4 monsters (3× poziom I + 1 na osobny stos), 8 kart trofeów atrybutów, każdy gracz dostaje 3 trofea szkoły i zwiększa 1 atrybut do poziomu 2. Start z 2–5 kartami i 4–7 złotem.',
     5: '5 potworów (3× poziom I + 2 na osobny stos), 8 kart trofeów atrybutów, każdy gracz dostaje 4 trofea szkoły i zwiększa 1 atrybut do poziomu 2. Start z 2–5 kartami i 5–7 złotem.',
 };
 
@@ -16,7 +16,7 @@ export const krokiMap: Record<number, string[]> = {
         'Rozmieść żetony złota, kości pokera i zamkniętą tawernę.',
         'Obok planszy połóż żetony złota (lub monety), kości do pokera i żeton/figurkę zamkniętej tawerny.',
         'Żetony obszarów rozdziel na 3 stosy wg typów terenu, potasuj i połóż obok planszy rewersem do góry. Przełóż po 1 z każdego typu na odpowiednie pola w sekcji potworów.',
-        'Rozłóż potwory:\n' +
+        'Rozłóż monsters:\n' +
         'Karty i żetony potworów rozdziel na 3 stosy wg poziomów (I, II, III) i połóż obok planszy – karty odkryte a żetony potasowane i zakryte.\n' +
         'Wylosuj 3 żetony potworów: po 1 z każdego poziomu.\n' +
         'Wylosowane żetony potworów umieść losowo w obszarach wylosowanych wcześniej (rewersem do góry).\n' +
@@ -40,7 +40,7 @@ export const krokiMap: Record<number, string[]> = {
         'Talie eksploracji miast i dzikich ostępów potasuj. Talii zdarzeń nie tasuj! Połóż talie na planszy.',
         'Obok planszy połóż żetony złota (lub monety), kości do pokera i żeton/figurkę zamkniętej tawerny.',
         'Żetony obszarów rozdziel na 3 stosy wg typów terenu, potasuj i połóż obok planszy rewersem do góry. Przełóż po 1 z każdego typu na odpowiednie pola w sekcji potworów.',
-        'Rozłóż potwory:\n' +
+        'Rozłóż monsters:\n' +
         'Karty i żetony potworów rozdziel na 3 stosy wg poziomów (I, II, III) i połóż obok planszy – karty odkryte a żetony potasowane i zakryte.\n' +
         'Wylosuj 3 żetony potworów: 2 × poziomu I + 1 × poziomu II.\n' +
         'Wylosowane żetony potworów umieść losowo w obszarach wylosowanych wcześniej (rewersem do góry).\n' +
@@ -66,7 +66,7 @@ export const krokiMap: Record<number, string[]> = {
         'Talie eksploracji miast i dzikich ostępów potasuj. Talii zdarzeń nie tasuj! Połóż talie na planszy.',
         'Obok planszy połóż żetony złota (lub monety), kości do pokera i żeton/figurkę zamkniętej tawerny.',
         'Żetony obszarów rozdziel na 3 stosy wg typów terenu, potasuj i połóż obok planszy rewersem do góry. Przełóż po 1 z każdego typu na odpowiednie pola w sekcji potworów.',
-        'Rozłóż potwory:\n' +
+        'Rozłóż monsters:\n' +
         'Karty i żetony potworów rozdziel na 3 stosy wg poziomów (I, II, III) i połóż obok planszy – karty odkryte a żetony potasowane i zakryte.\n' +
         'Wylosuj 3 żetony potworów: 3 × poziomu I.\n' +
         'Wylosowane żetony potworów umieść losowo w obszarach wylosowanych wcześniej (rewersem do góry).\n' +
@@ -93,7 +93,7 @@ export const krokiMap: Record<number, string[]> = {
         'Talie eksploracji miast i dzikich ostępów potasuj. Talii zdarzeń nie tasuj! Połóż talie na planszy.',
         'Obok planszy połóż żetony złota (lub monety), kości do pokera i żeton/figurkę zamkniętej tawerny.',
         'Żetony obszarów rozdziel na 3 stosy wg typów terenu, potasuj i połóż obok planszy rewersem do góry. Przełóż po 1 z każdego typu na odpowiednie pola w sekcji potworów.',
-        'Rozłóż potwory:\n' +
+        'Rozłóż monsters:\n' +
         'Karty i żetony potworów rozdziel na 3 stosy wg poziomów (I, II, III) i połóż obok planszy – karty odkryte a żetony potasowane i zakryte.\n' +
         'Połóż 1 żeton potwora poziomu I na dodatkowy stos obok planszy. Zob. str. 26 instrukcji do czego służy.\n' +
         'Wylosuj 3 żetony potworów: 3 × poziomu I.\n' +
@@ -123,7 +123,7 @@ export const krokiMap: Record<number, string[]> = {
         'Talie eksploracji miast i dzikich ostępów potasuj. Talii zdarzeń nie tasuj! Połóż talie na planszy.',
         'Obok planszy połóż żetony złota (lub monety), kości do pokera i żeton/figurkę zamkniętej tawerny.',
         'Żetony obszarów rozdziel na 3 stosy wg typów terenu, potasuj i połóż obok planszy rewersem do góry. Przełóż po 1 z każdego typu na odpowiednie pola w sekcji potworów.',
-        'Rozłóż potwory:\n' +
+        'Rozłóż monsters:\n' +
         'Karty i żetony potworów rozdziel na 3 stosy wg poziomów (I, II, III) i połóż obok planszy – karty odkryte a żetony potasowane i zakryte.\n' +
         'Połóż 2 żetony potworów poziomu I na dodatkowy stos obok planszy. Zob. str. 26 instrukcji do czego służy.\n' +
         'Wylosuj 3 żetony potworów: 3 × poziomu I.\n' +

@@ -47,13 +47,13 @@ export const Navbar = () => {
             <NavLink href="/setup">Szybki Start</NavLink>
           </li>
           <li>
-            <NavLink href="/bestiariusz">Bestiariusz</NavLink>
+            <NavLink href="/bestiary">Bestiariusz</NavLink>
           </li>
           <li>
             <NavLink href="/inventory">Ekwipunek</NavLink>
           </li>
           <li>
-            <NavLink href="/gracze">Gracze</NavLink>
+            <NavLink href="/players">Gracze</NavLink>
           </li>
           <li>
             <UserButton />

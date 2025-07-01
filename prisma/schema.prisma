@@ -21,3 +21,19 @@ model Character {
   school   String
   players  Player[]
 }
+
+model Category {
+  id    Int    @id @default(autoincrement())
+  name  String
+  items Item[]
+}
+
+model Item {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String
+  images      String[]
+  stats       String[]
+  categoryId  Int
+  category    Category @relation(fields: [categoryId], references: [id])
+}

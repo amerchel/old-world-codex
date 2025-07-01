@@ -11,7 +11,7 @@
     "migrate": "prisma migrate dev"
   },
   "prisma": {
-    "seed": "ts-node --project tsconfig.json prisma/seed.ts"
+    "seed": "ts-node --project prisma/tsconfig.json prisma/seed.ts"
   },
   "dependencies": {
     "@clerk/localizations": "^3.17.1",

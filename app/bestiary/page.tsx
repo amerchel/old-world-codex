@@ -15,7 +15,7 @@ export default function Bestiary() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl">
         <div
           className="cursor-pointer group rounded-2xl overflow-hidden hover:scale-[1.03] transition-transform shadow-xl bg-bg"
-          onClick={() => router.push('bestiariusz/szkoly-wiedzminskie')}
+          onClick={() => router.push('bestiary/witchers')}
         >
           <div className="relative w-full hidden md:block h-[400px] lg:h-[500px]">
             <Image
@@ -36,7 +36,7 @@ export default function Bestiary() {
 
         <div
           className="cursor-pointer group rounded-2xl overflow-hidden hover:scale-[1.03] transition-transform shadow-xl bg-bg"
-          onClick={() => router.push('/bestiariusz/potwory')}
+          onClick={() => router.push('/bestiary/monsters')}
         >
           <div className="relative w-full hidden md:block h-[400px] lg:h-[500px]">
             <Image

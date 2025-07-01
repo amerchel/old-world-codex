@@ -24,6 +24,7 @@ export default function Home() {
   const [players, setPlayers] = useState<Player[]>([]);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [pendingDelete, setPendingDelete] = useState<Player | null>(null);
 
   const fetchPlayers = async () => {
     const res = await fetch('/api/players');
@@ -81,6 +82,21 @@ export default function Home() {
     fetchPlayers();
   };
 
+  const confirmDelete = (player: Player) => {
+    setPendingDelete(player);
+  };
+
+  const cancelDelete = () => {
+    setPendingDelete(null);
+  };
+
+  const confirmDeleteNow = async () => {
+    if (pendingDelete) {
+      await handleDelete(pendingDelete.id);
+      setPendingDelete(null);
+    }
+  };
+
   const handleEdit = (player: Player) => {
     setName(player.name);
     setCharacterId(player.character.id.toString());
@@ -123,12 +139,8 @@ export default function Home() {
                         : 'Wybierz postać...'}
                   </Listbox.Button>
                   <Listbox.Options className="absolute z-10 mt-1 w-full rounded bg-[#2e2e2e] border border-[#3a3a3a] ring-1 ring-primary ring-opacity-30 shadow-none max-h-60 overflow-auto list-none p-0">
-                  {characters.map((char) => (
-                        <Listbox.Option
-                            key={char.id}
-                            value={char.id.toString()}
-                            as={Fragment}
-                        >
+                    {characters.map((char) => (
+                        <Listbox.Option key={char.id} value={char.id.toString()} as={Fragment}>
                           {({ active, selected }) => (
                               <li
                                   className={`cursor-pointer select-none px-4 py-2 ${
@@ -173,13 +185,32 @@ export default function Home() {
                     </div>
                     <div className="flex gap-2">
                       <Button onClick={() => handleEdit(player)}>Edytuj</Button>
-                      <Button onClick={() => handleDelete(player.id)}>Usuń</Button>
+                      <Button onClick={() => confirmDelete(player)}>Usuń</Button>
                     </div>
                   </li>
               ))}
             </ul>
           </div>
         </div>
+
+        {/* Potwierdzenie usunięcia */}
+        {pendingDelete && (
+            <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+              <div className="bg-[#1f1f1f] border border-[#444] rounded-lg p-6 text-center max-w-sm w-full space-y-4 shadow-xl">
+                <h2 className="text-xl font-semibold text-primary">Potwierdzenie</h2>
+                <p className="text-secondary">
+                  Czy na pewno chcesz usunąć gracza{' '}
+                  <span className="text-white font-semibold">{pendingDelete.name}</span>?
+                </p>
+                <div className="flex justify-center gap-4">
+                  <Button onClick={confirmDeleteNow}>Tak, usuń</Button>
+                  <Button onClick={cancelDelete} variant='secondary'>
+                    Anuluj
+                  </Button>
+                </div>
+              </div>
+            </div>
+        )}
       </main>
   );
 }
